@@ -1,7 +1,7 @@
 ﻿/* 
  * Integer Factorization using Pollard's p-1 factoring algorithm(Algorithm 3.14 in "Handbook of Applied Cryptography")
  * This program doesn't guarantee complete factorization of an integer.
- * If the program run for about 30s and still didn't get the complete factorization,
+ * If the program run for about one minute and still didn't get the complete factorization,
  * it will stop and output the current factorization.
  * Contact: Depu Meng (v-depmen@microsoft.com)
  */

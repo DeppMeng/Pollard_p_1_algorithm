@@ -71,7 +71,7 @@ namespace Pollard_p_1_algorithm
         //Main factorization function
         static void PollardFactorization(BigInteger input)
         {
-            if (input == 1)
+            if (input == 1 || input == 0)
                 return;
             //If input is a prime, then add itself to the prime factor list and return
             if (MillerRabinPrimeTest(input, 5))
@@ -159,8 +159,6 @@ namespace Pollard_p_1_algorithm
         //certainty is a parameter related to its reliability, the higher certainty is, the more reliable, the slower.
         static bool MillerRabinPrimeTest(BigInteger N, int certainty)
         {
-            if (N == null)
-                return false;
             if (N == 2 || N == 3)
                 return true;
             if (N < 2 || N % 2 == 0)

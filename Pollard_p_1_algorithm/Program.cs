@@ -35,7 +35,7 @@ namespace Pollard_p_1_algorithm
 
             try
             {
-                test = BigInteger.Parse("10086");
+                test = BigInteger.Parse(args[0]);
             }
             catch (FormatException)
             {

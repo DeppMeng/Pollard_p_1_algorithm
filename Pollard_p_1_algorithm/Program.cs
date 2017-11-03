@@ -85,7 +85,7 @@ namespace Pollard_p_1_algorithm
             BigInteger a = new BigInteger();
             BigInteger d = new BigInteger();
             BigInteger bound = 100;
-            for (int count = 0; count < 30; count++)
+            for (int count = 0; count < 100; count++)
             {
                 a = RandomInteger(input) + 1;
                 d = BigInteger.GreatestCommonDivisor(a, input);

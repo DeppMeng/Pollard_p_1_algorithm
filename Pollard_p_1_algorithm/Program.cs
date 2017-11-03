@@ -35,7 +35,7 @@ namespace Pollard_p_1_algorithm
 
             try
             {
-                test = BigInteger.Parse(args[0]);
+                test = BigInteger.Parse("10086");
             }
             catch (FormatException)
             {
@@ -159,6 +159,8 @@ namespace Pollard_p_1_algorithm
         //certainty is a parameter related to its reliability, the higher certainty is, the more reliable, the slower.
         static bool MillerRabinPrimeTest(BigInteger N, int certainty)
         {
+            if (N == null)
+                return false;
             if (N == 2 || N == 3)
                 return true;
             if (N < 2 || N % 2 == 0)
